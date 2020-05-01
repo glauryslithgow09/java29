@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function contarSeleccionados() {
+            var cant = 0;
+            if (document.getElementById('checkbox1').checked) {
+                cant++;
+            }
+            if (document.getElementById('checkbox2').checked) {
+                cant++;
+            }
+            if (document.getElementById('checkbox3').checked) {
+                cant++;
+            }
+
+            alert('Practica ' + cant + ' deportes');
+        }
+    </script>
+
+    <form>
+        <input type="checkbox" id="checkbox1">Fútbol
+        <br>
+        <input type="checkbox" id="checkbox2">Básket
+        <br>
+        <input type="checkbox" id="checkbox3">Tenis
+        <br>
+        <input type="button" value="Mostrar" onClick="contarSeleccionados()">
+    </form>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mostrarSeleccionado() {
+            if (document.getElementById('radio1').checked) {
+                alert(' ingresado al sitio');
+            }
+            if (document.getElementById('radio2').checked) {
+                alert('No puede ingresar al sitio');
+            }
+
+        }
+    </script>
+
+    <form>
+        <input type="radio" id="radio1" name="estudios">+18 años
+        <br>
+        <input type="radio" id="radio2" name="estudios">Menor de 18 años
+        <br>
+        <input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+    </form>
+
+</body>
+
+</html>
